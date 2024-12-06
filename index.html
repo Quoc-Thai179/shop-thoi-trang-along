@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng thời trang nam A Long</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Cửa hàng thời trang nam A Long</h1>
+    </div>
+    <div class="container">
+        <h2>Nhập thông tin của bạn để chọn size phù hợp</h2>
+        <form id="sizeForm">
+            <div class="input-group">
+                <label for="height">Chiều cao (cm):</label>
+                <input type="number" id="height" placeholder="Nhập chiều cao của bạn">
+            </div>
+            <div class="input-group">
+                <label for="weight">Cân nặng (kg):</label>
+                <input type="number" id="weight" placeholder="Nhập cân nặng của bạn">
+            </div>
+            <div class="input-group">
+                <label for="waist">Vòng eo (cm):</label>
+                <input type="number" id="waist" placeholder="Nhập số đo vòng eo">
+            </div>
+            <div class="input-group">
+                <label for="legLength">Chiều dài chân (cm):</label>
+                <input type="number" id="legLength" placeholder="Nhập chiều dài chân">
+            </div>
+            <div class="input-group">
+                <label for="shoulder">Chiều dài vai (cm):</label>
+                <input type="number" id="shoulder" placeholder="Nhập chiều dài vai">
+            </div>
+            <div class="input-group">
+                <label for="chest">Vòng ngực (cm):</label>
+                <input type="number" id="chest" placeholder="Nhập số đo vòng ngực">
+            </div>
+            <button type="button" onclick="calculateSize()">Tính size</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
